@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minesweeper</title>
+    <script src="MineSweeperV4.js"></script>
+    <link type="text/css" rel="styleSheet"  href="style.css" />
+    <link type="text/css" rel="styleSheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body id="nocursor"><center>
+    <div class="logo" >
+        <h1 class="title">MineSweeper</h1>
+        <img src="img/logo.gif" id="1-1 0" class="logo2">
+        <div class="startGame">  
+            <input id="width" onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'',/[^\w\.\/]/ig,'')">宽度</input>
+            <input id="height" onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'',/[^\w\.\/]/ig,'')">高度</input>
+            <button id="yes" onclick="option()">确认</button>
+        </div>
+    </div>
+    <h3 id=gameTime></h3>
+</body></center>
+</html>
