@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>minesweeper</title>
-    <script src="MineSweeperV4.js"></script>
-    <link type="text/css" rel="styleSheet"  href="style.css" />
-    <link type="text/css" rel="styleSheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="newMineSweeper.js"></script>
 </head>
 <body id="nocursor"><center>
-    <div class="logo" >
-        <h1 class="title">MineSweeper</h1>
-        <img src="img/logo.gif" id="1-1 0" class="logo2">
-        <div class="startGame">  
-            <input id="width" onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'',/[^\w\.\/]/ig,'')">宽度</input>
-            <input id="height" onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'',/[^\w\.\/]/ig,'')">高度</input>
-            <button id="yes" onclick="option()">确认</button>
-        </div>
+    <h1>minesweeper</h1>
+    <div id="1" style="height: 100px;">
+        <img src="img/unknow-1.png" id="1-1 0" ><img src="img/unknow-1.png" id="1-2 0" ><img src="img/unknow-1.png" id="1-3 0" ><img src="img/unknow-1.png" id="1-4 0" ><img src="img/unknow-1.png" id="1-5 0" ><img src="img/unknow-1.png" id="1-6 0" ><img src="img/unknow-1.png" id="1-7 0" ><img src="img/unknow-1.png" id="1-8 0" ><img src="img/unknow-1.png" id="1-9 0" >
+    </div>
+    <div id="2" style="height: 100px;">
+        <img src="img/unknow-1.png" id="2-1 0" ><img src="img/unknow-1.png" id="2-2 0" ><img src="img/unknow-1.png" id="2-3 0" ><img src="img/unknow-1.png" id="2-4 0" ><img src="img/unknow-1.png" id="2-5 0" ><img src="img/unknow-1.png" id="2-6 0" ><img src="img/unknow-1.png" id="2-7 0" ><img src="img/unknow-1.png" id="2-8 0" ><img src="img/unknow-1.png" id="2-9 0" >
+    </div>
+    <div id="3" style="height: 100px;">
+        <img src="img/unknow-1.png" id="3-1 0"><img src="img/unknow-1.png" id="3-2 0"><img src="img/unknow-1.png" id="3-3 0"><img src="img/unknow-1.png" id="3-4 0"><img src="img/unknow-1.png" id="3-5 0"><img src="img/unknow-1.png" id="3-6 0"><img src="img/unknow-1.png" id="3-7 0"><img src="img/unknow-1.png" id="3-8 0"><img src="img/unknow-1.png" id="3-9 0">
+    </div>
+    <div id="4" style="height: 100px;">
+        <img src="img/unknow-1.png" id="4-1 0"><img src="img/unknow-1.png" id="4-2 0"><img src="img/unknow-1.png" id="4-3 0"><img src="img/unknow-1.png" id="4-4 0"><img src="img/unknow-1.png" id="4-5 0"><img src="img/unknow-1.png" id="4-6 0"><img src="img/unknow-1.png" id="4-7 0"><img src="img/unknow-1.png" id="4-8 0"><img src="img/unknow-1.png" id="4-9 0">
+    </div>
+    <div id="5" style="height: 100px;">
+        <img src="img/unknow-1.png" id="5-1 0"><img src="img/unknow-1.png" id="5-2 0"><img src="img/unknow-1.png" id="5-3 0"><img src="img/unknow-1.png" id="5-4 0"><img src="img/unknow-1.png" id="5-5 0"><img src="img/unknow-1.png" id="5-6 0"><img src="img/unknow-1.png" id="5-7 0"><img src="img/unknow-1.png" id="5-8 0"><img src="img/unknow-1.png" id="5-9 0">
+    </div>
+    <div id="6" style="height: 100px;">
+        <img src="img/unknow-1.png" id="6-1 0"><img src="img/unknow-1.png" id="6-2 0"><img src="img/unknow-1.png" id="6-3 0"><img src="img/unknow-1.png" id="6-4 0"><img src="img/unknow-1.png" id="6-5 0"><img src="img/unknow-1.png" id="6-6 0"><img src="img/unknow-1.png" id="6-7 0"><img src="img/unknow-1.png" id="6-8 0"><img src="img/unknow-1.png" id="6-9 0">
+    </div>
+    <div id="7" style="height: 100px;">
+        <img src="img/unknow-1.png" id="7-1 0"><img src="img/unknow-1.png" id="7-2 0"><img src="img/unknow-1.png" id="7-3 0"><img src="img/unknow-1.png" id="7-4 0"><img src="img/unknow-1.png" id="7-5 0"><img src="img/unknow-1.png" id="7-6 0"><img src="img/unknow-1.png" id="7-7 0"><img src="img/unknow-1.png" id="7-8 0"><img src="img/unknow-1.png" id="7-9 0">
+    </div>
+    <div id="8" style="height: 100px;">
+        <img src="img/unknow-1.png" id="8-1 0"><img src="img/unknow-1.png" id="8-2 0"><img src="img/unknow-1.png" id="8-3 0"><img src="img/unknow-1.png" id="8-4 0"><img src="img/unknow-1.png" id="8-5 0"><img src="img/unknow-1.png" id="8-6 0"><img src="img/unknow-1.png" id="8-7 0"><img src="img/unknow-1.png" id="8-8 0"><img src="img/unknow-1.png" id="8-9 0">
+    </div>
+    <div id="9" style="height: 100px;">
+        <img src="img/unknow-1.png" id="9-1 0"><img src="img/unknow-1.png" id="9-2 0"><img src="img/unknow-1.png" id="9-3 0"><img src="img/unknow-1.png" id="9-4 0"><img src="img/unknow-1.png" id="9-5 0"><img src="img/unknow-1.png" id="9-6 0"><img src="img/unknow-1.png" id="9-7 0"><img src="img/unknow-1.png" id="9-8 0"><img src="img/unknow-1.png" id="9-9 0">
     </div>
     <h3 id=gameTime></h3>
 </body></center>
